@@ -36,10 +36,7 @@
         width: 100%;
         max-width: 1080px;
         height: 200px;
-        background-image: url('https://i.postimg.cc/L4wS1XVf/file-00000000299061f5b73a16b1101de63f-1.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-color: #000000; /* Fondo liso negro */
     }
 
     .profile-container {
@@ -53,7 +50,7 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border: 4px solid #ff00cf; /* borde rosa neón */
+        border: 4px solid #ffffff; /* borde blanco */
         object-fit: cover;
         display: block;
         margin-bottom: 20px;
@@ -77,7 +74,13 @@
         font-weight: 400;
         margin-bottom: 32px;
         color: black;
-        line-height: 1.2;
+        line-height: 1.4;
+        text-align: justify; /* presentación justificada */
+    }
+
+    .subtitle strong {
+        display: block;
+        margin-bottom: 4px; /* sin interlineado extra */
     }
 
     .buttons {
@@ -94,8 +97,8 @@
         text-align: center;
         padding: 14px 0;
         border: 2px solid black;
-        background-color: black;
-        color:#ff00cf;
+        background-color: #ffffff; /* fondo blanco */
+        color: black; /* texto negro */
         font-size: 18px;
         font-weight: 600;
         border-radius: 8px;
@@ -103,21 +106,7 @@
     }
 
     .buttons a:hover {
-        background-color: #222;
-    }
-
-    .emoji {
-        width: 1em;
-        height: 1em;
-        vertical-align: middle;
-    }
-
-    .sticker {
-        width: 2em; /* más grande */
-        height: 2em;
-        vertical-align: middle;
-        margin-left: 6px; /* espacio desde "Queen B" */
-        filter: drop-shadow(0 0 6px #ff00cf) drop-shadow(0 0 8px #ff00cf); /* efecto neón rosa */
+        background-color: #f5f5f5;
     }
 
     @media (max-width: 480px) {
@@ -138,10 +127,6 @@
         .buttons a {
             font-size: 16px;
         }
-        .sticker {
-            width: 1.7em;
-            height: 1.7em;
-        }
     }
 </style>
 </head>
@@ -150,22 +135,23 @@
     <div class="banner"></div>
 
     <div class="profile-container">
-        <img class="profile-photo" src="https://i.postimg.cc/brZ928hY/file-00000000264c61fbbe925aa9462dcbcf-1.jpg" alt="Logo María Barbara Zavala">
+        <img class="profile-photo" src="https://i.ibb.co/fdqhGS42/profile.jpg" alt="Foto de perfil María Barbara Zavala">
         <div class="profile-info">
-            <h1>María Barbara Zavala <img src="https://i.postimg.cc/c1B1tYJz/ei-1758679752019-removebg-preview.png" alt="emoji" class="emoji"></h1>
+            <h1>María Barbara Zavala</h1>
             <p>@mariabarbarazav</p>
             <div class="subtitle">
-                Barbara's Kingdom | Queen B <img src="https://i.postimg.cc/Njs711YP/ei-1758681124040-removebg-preview.png" alt="sticker" class="sticker"><br>
-                Maquillaje, belleza, cosméticos, cosmetología, productos de belleza, moda, diseño y estilo. <img src="https://i.postimg.cc/WpxR31Gy/ei-1758679784939-removebg-preview.png" alt="emoji" class="emoji">
+                <strong>Barbara's Kingdom | Queen B</strong>
+                Bachelor’s degree in Business Administration with postgraduate specialization in Business Management focused on Systemic Leadership.
             </div>
         </div>
 
         <div class="buttons">
-            <a href="https://drive.google.com/drive/folders/1TU90uK0YrD-7Fw0zcXQ6yTeHS3koaa2W" target="_blank">Barbara's Kingdom</a>
-            <a href="https://drive.google.com/drive/folders/11d8BXJSm46_baojrcGyiERHaMnU8VZa3" target="_blank">Barbara Cosmetics</a>
-            <a href="https://drive.google.com/drive/folders/10v0Cgd6SaSsTAwHwLODgIbziekSb3caE" target="_blank">Noir Goetia</a>
-            <a href="https://drive.google.com/drive/folders/11rtGvHZEmYYd1akl1_GqlGmGQE4I0RET" target="_blank">María Bárbara Zavala</a>
             <a href="https://mariabarbarazavala.github.io/aboutmbz1" target="_blank">GitHub About</a>
+            <a href="https://drive.google.com/drive/folders/1TU90uK0YrD-7Fw0zcXQ6yTeHS3koaa2W" target="_blank">X | Twitter</a>
+            <a href="https://drive.google.com/drive/folders/11d8BXJSm46_baojrcGyiERHaMnU8VZa3" target="_blank">LinkedIn</a>
+            <a href="https://drive.google.com/drive/folders/10v0Cgd6SaSsTAwHwLODgIbziekSb3caE" target="_blank">Blue Sky</a>
+            <a href="https://drive.google.com/drive/folders/11rtGvHZEmYYd1akl1_GqlGmGQE4I0RET" target="_blank">Mastodon</a>
+            <a href="https://drive.google.com/drive/folders/10MBIHDGLhzBDUi9JYeb40c9WgPDChrML" target="_blank">Google Drive</a>
         </div>
     </div>
 
